@@ -1,6 +1,6 @@
 # Timing
 
-Very compact timing module for quickly testing speed of certain parts of your
+Very compact timing module for quickly testing the speed of certain parts of your
 codebase.
 
 ## Installing
@@ -31,8 +31,8 @@ end
 ```
 
 The time macro is a very simple macro which wraps the block of code with a
-timing function. It executes the code only, meaning the measurements might
-differ slightly each execution. 
+timing function. It executes the code only once, meaning the measurements might
+differ slightly each execution due to garbage collection etc.. 
 
 If more precision is needed, consider using the
 time_avg macro. This macro will execute the block of code X amount of 
